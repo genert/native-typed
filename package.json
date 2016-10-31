@@ -1,0 +1,72 @@
+{
+  "name": "native-typed",
+  "version": "1.0.0",
+  "description": "README.md",
+  "main": "dist/native-typed.min.js",
+  "scripts": {
+    "precommit": "npm test && npm run build",
+    "build": "rimraf dist && webpack --no-minimize && webpack",
+    "coverage": "babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+    "coveralls": "npm run coverage && coveralls < coverage/lcov.info && rimraf coverage",
+    "test": "npm run build",
+    "test-server": "mocha test --recursive --compilers js:babel-core/register --bail",
+    "test-browser": "karma start --single-run",
+    "tdd": "npm run test-server -- --watch",
+    "tdd-browser": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Genert/native-typed.git"
+  },
+  "keywords": [
+    "typing",
+    "animation"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "babel": "*",
+    "babel-cli": "^6.18.0",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chai": "*",
+    "coveralls": "*",
+    "eslint": "*",
+    "eslint-plugin-babel": "*",
+    "husky": "*",
+    "isparta": "*",
+    "karma": "*",
+    "karma-chai": "*",
+    "karma-mocha": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-spec-reporter": "*",
+    "karma-unexpected": "*",
+    "karma-webpack": "*",
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "phantomjs-polyfill": "*",
+    "rimraf": "*",
+    "unexpected": "*",
+    "webpack": "*"
+  },
+  "author": {
+    "name": "Genert Org",
+    "email": "contact@genert.org",
+    "url": "http://genert.org"
+  },
+  "bugs": {
+    "url": "https://github.com/Genert/native-typed/issues"
+  },
+  "homepage": "https://github.com/Genert/native-typed#readme",
+  "engines": {
+    "node": ">=6.1.0"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

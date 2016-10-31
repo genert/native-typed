@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - 'stable'
+  - '6'
+  - '5'
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
+after_script:
+  - npm run coveralls
