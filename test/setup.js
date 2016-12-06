@@ -1,5 +1,5 @@
 'use strict';
-
+import 'babel-polyfill;'
 import jsdom from 'jsdom';
 
 // Define some html to be our basic document
