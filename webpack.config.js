@@ -10,7 +10,7 @@ module.exports = {
     path: './dist',
     filename: minimize ? 'native-typed.min.js' : 'native-typed.js',
     libraryTarget: 'umd',
-    library: 'NativeTyped'
+    library: 'NTyped'
   },
   module: {
     loaders: [{
