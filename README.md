@@ -127,4 +127,4 @@ Issues can be resolved quickest if they are descriptive and include both a reduc
 Licensed under the [MIT License](LICENSE) © 2016 Genert Org
 
 ## Extra
-**Inspired by: ** [Typed.js](http://www.mattboldt.com/demos/typed-js/)
+**Inspired by:** [Typed.js](http://www.mattboldt.com/demos/typed-js/)
