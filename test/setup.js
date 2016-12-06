@@ -1,5 +1,9 @@
+require('babel-polyfill');
+
+// Set strict mode.
 'use strict';
-import 'babel-polyfill;'
+
+// Import JSDOM.
 import jsdom from 'jsdom';
 
 // Define some html to be our basic document
