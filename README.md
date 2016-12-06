@@ -51,6 +51,16 @@ new NTyped(document.querySelector('#caption'), {
 });
 ```
 
+> ###`options.strings`
+> The array of strings to display in typing animation.
+>
+> **Default:** *(array)* `'This is a typing animation!', 'You can also add your own sentences', 'So go do it!'`
+
+> ###`options.stringType`
+> Determines whether provides strings are using HTML or not. You can choose between `NTyped.Types.HTML` and `NTyped.Types.TEXT`.
+>
+> **Default:** *(enum)* `NTyped.Types.HTML`
+
 > ###`options.loop`
 > Make animation loop.
 >
@@ -77,20 +87,21 @@ new NTyped(document.querySelector('#caption'), {
 > **Default:** *(int)* `500`
 
 > ###`options.typeSpeed`
->
+> The speed of typing characters in milliseconds.
 >
 > **Default:** *(int)* `0`
 
 > ###`options.deleteSpeed`
->
+> The speed of deleting characters in milliseconds.
 >
 > **Default:** *(int)* `0`
 
 > ###`options.classes.cursor`
->
+> Classname for cursor element.
 >
 > **Default:** *(sring)* `title__cursor`
 >
+> To have the cursor effect, please add following CSS to your stylesheet.
 > ```css
 > .title__cursor {
 >    opacity: 1;
@@ -102,7 +113,6 @@ new NTyped(document.querySelector('#caption'), {
 >    50%  { opacity: 0; }
 >    100% { opacity: 1; }
 > }
->
 > ```
 
 ## Contributions & Issues

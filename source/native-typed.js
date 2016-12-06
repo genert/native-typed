@@ -129,10 +129,9 @@ class NTyped {
     stringType: NTyped.Types.HTML,
 
     strings: [
-      'These are the default values...',
-      'You know what you should do?',
-      'Use your own!',
-      'Have a great day!'
+      'This is a typing animation!',
+      'You can also add your own sentences',
+      'So go do it!'
     ],
 
     showCursor: true,
