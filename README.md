@@ -115,6 +115,9 @@ new NTyped(document.querySelector('#caption'), {
 > }
 > ```
 
+## Polyfill
+The project uses `Object.assign` and `Object.entries` that you might need polyfill for. You can for instance use *bbabel-polyfill* in this case.
+
 ## Contributions & Issues
 Contributions are welcome. Please clearly explain the purpose of the PR and follow the current style.
 
@@ -124,4 +127,4 @@ Issues can be resolved quickest if they are descriptive and include both a reduc
 Licensed under the [MIT License](LICENSE) © 2016 Genert Org
 
 ## Extra
-**Inspired by** [Typed.js](http://www.mattboldt.com/demos/typed-js/)
+**Inspired by: ** [Typed.js](http://www.mattboldt.com/demos/typed-js/)
