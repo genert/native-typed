@@ -27,7 +27,7 @@ class NTyped {
 
     this._timeout = setTimeout(() => {
       this.writeCharacter(this._strings[this._arrayPosition], this._stringPostion);
-    }, 500);
+    }, this._options.startDelay);
   }
 
   addCursorElement () {
@@ -146,7 +146,7 @@ class NTyped {
     deleteSpeed: 0,
 
     classes: {
-      cursor: 'contact__title__typed'
+      cursor: 'title__cursor'
     }
   };
 }

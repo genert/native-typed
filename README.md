@@ -56,6 +56,55 @@ new NTyped(document.querySelector('#caption'), {
 >
 > **Default:** *(boolean)* `true`
 
+> ###`options.showCursor`
+> Show cursor.
+>
+> **Default:** *(boolean)* `true`
+
+> ###`options.cursorChar`
+> If cursor is enabled through options, show this character.
+>
+> **Default:** *(string)* `|`
+
+> ###`options.startDelay`
+> Time delay in milliseconds before typing writing animation starts initially.
+>
+> **Default:** *(int)* `500`
+
+> ###`options.backDelay`
+> Time delay in milliseconds before deleting characters after typing them out.
+>
+> **Default:** *(int)* `500`
+
+> ###`options.typeSpeed`
+>
+>
+> **Default:** *(int)* `0`
+
+> ###`options.deleteSpeed`
+>
+>
+> **Default:** *(int)* `0`
+
+> ###`options.classes.cursor`
+>
+>
+> **Default:** *(sring)* `title__cursor`
+>
+> ```css
+> .title__cursor {
+>    opacity: 1;
+>    animation: blink 750ms infinite;
+> }
+>
+> @keyframes blink {
+>    0%   { opacity: 1; }
+>    50%  { opacity: 0; }
+>    100% { opacity: 1; }
+> }
+>
+> ```
+
 ## Contributions & Issues
 Contributions are welcome. Please clearly explain the purpose of the PR and follow the current style.
 
