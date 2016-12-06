@@ -51,10 +51,10 @@ new NTyped(document.querySelector('#caption'), {
 });
 ```
 
-> ###`options.loop` *boolean*
+> ###`options.loop`
 > Make animation loop.
 >
-> **Default:** `true`
+> **Default:** *(boolean)* `true`
 
 ## Contributions & Issues
 Contributions are welcome. Please clearly explain the purpose of the PR and follow the current style.
@@ -63,3 +63,6 @@ Issues can be resolved quickest if they are descriptive and include both a reduc
 
 ## Licence
 Licensed under the [MIT License](LICENSE) © 2016 Genert Org
+
+## Extra
+**Inspired by** [Typed.js](http://www.mattboldt.com/demos/typed-js/)
