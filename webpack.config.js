@@ -5,7 +5,7 @@ const packPlugins = minimize
   : [];
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './source/index.js',
   output: {
     path: './dist',
     filename: minimize ? 'native-typed.min.js' : 'native-typed.js',
