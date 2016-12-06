@@ -12,6 +12,20 @@ describe('Native Typed', () => {
     it('should be defined', () => {
       expect(nativeTyped, 'to be defined');
     });
+
+    it('should have static types', () => {
+      expect(NTyped.Types, 'to be defined');
+      expect(NTyped.Types.HTML, 'to be defined');
+      expect(NTyped.Types.HTML, 'to be a', 'number');
+      expect(NTyped.Types.HTML, 'to be', 0);
+      expect(NTyped.Types.TEXT, 'to be defined');
+      expect(NTyped.Types.TEXT, 'to be a', 'number');
+      expect(NTyped.Types.TEXT, 'to be', 1);
+    });
+
+    it('should have default options', () => {
+      expect(NTyped.defaultOptions, 'to be defined');
+    });
   });
 
   describe('initialize', () => {

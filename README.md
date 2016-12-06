@@ -54,7 +54,7 @@ new NTyped(document.querySelector('#caption'), {
 > ###`options.strings`
 > The array of strings to display in typing animation.
 >
-> **Default:** *(array)* `'This is a typing animation!', 'You can also add your own sentences', 'So go do it!'`
+> **Default:** *(array)* `['This is a typing animation!', 'You can also add your own sentences', 'So go do it!']`
 
 > ###`options.stringType`
 > Determines whether provides strings are using HTML or not. You can choose between `NTyped.Types.HTML` and `NTyped.Types.TEXT`.

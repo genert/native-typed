@@ -120,7 +120,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      this._timeout = setTimeout(function () {
 	        _this.writeCharacter(_this._strings[_this._arrayPosition], _this._stringPostion);
-	      }, 500);
+	      }, this._options.startDelay);
 	    }
 	  }, {
 	    key: 'addCursorElement',
@@ -231,7 +231,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	NTyped.defaultOptions = {
 	  stringType: NTyped.Types.HTML,
 
-	  strings: ['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'],
+	  strings: ['This is a typing animation!', 'You can also add your own sentences', 'So go do it!'],
 
 	  showCursor: true,
 	  cursorChar: '|',
@@ -244,7 +244,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  deleteSpeed: 0,
 
 	  classes: {
-	    cursor: 'contact__title__typed'
+	    cursor: 'title__cursor'
 	  }
 	};
 	exports.default = NTyped;
