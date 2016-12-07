@@ -6,7 +6,6 @@ A tiny dependency free JavaScript library javascript library **for typing animat
 
 - 1.77 kB gzipped of minified version :zap:
 - Dependency-free :tada:
-- IE9+ :heavy_check_mark:
 
 ```javascript
 new NTyped(document.querySelector('#caption'), {
